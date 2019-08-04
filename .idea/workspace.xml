@@ -53,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG./Users/victorcarrillo/Victor-Automation/comkrogertrainingtest/FirstSuite2.xml">
+  <component name="RunManager" selected="TestNG.FirstTest.TestingFlipkart">
     <configuration name="FirstTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="KrogerTraining" />
       <extension name="coverage">
@@ -129,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FirstTest.TestingFlipkart" />
         <item itemvalue="TestNG./Users/victorcarrillo/Victor-Automation/comkrogertrainingtest/FirstSuite2.xml" />
         <item itemvalue="TestNG./Users/victorcarrillo/Victor-Automation/comkrogertrainingtest/FirstSuite.xml" />
-        <item itemvalue="TestNG.FirstTest.TestingFlipkart" />
         <item itemvalue="TestNG.FirstTest2.TestingFlipkart" />
         <item itemvalue="TestNG.FirstTest" />
       </list>
