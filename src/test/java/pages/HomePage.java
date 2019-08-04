@@ -15,18 +15,7 @@ public class HomePage {
     public HomePage(WebDriver driver){
         this.driver = driver ;
     }
-/*
-    LocatorsRepository Locators = new LocatorsRepository();
 
-    public void closingPopupLogin(){
-        Locators.getExitLoginPopUp().click();
-    }
-    public void searchForItem(String a){
-        Locators.getInputTextField().sendKeys(a);
-        Locators.getSearchButton().click();
-    }
-
-*/
 
     @FindBy(how= How.CSS, using="button[class='_2AkmmA _29YdH8']") private WebElement exitLoginPopUp;
     @FindBy(how=How.CSS, using="input[type='text']") private WebElement inputTextField;
