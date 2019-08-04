@@ -1,36 +1,54 @@
 package Utility;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import java.util.List;
+
 public class LocatorsRepository {
 
-    WebDriver driver;
+    private String exitPopUp = "button[class='_2AkmmA _29YdH8']";
+    private String inputTextField = "input[type='text']";
+    private String searchButton = "button[type='submit']";
+    private String desiredResult = "a[title*='AKG K240 STUDIO HEADPHONE Wired Headphone']";
+    private String results = "a[class='_2cLu-l']";
+    private String addToCartButton = "button[class='_2AkmmA _2Npkh4 _2MWPVK']";
+    private String placerOrderButton= "button[class='_2AkmmA iwYpF9 _7UHT_c']";
 
-    public LocatorsRepository(WebDriver driver){
-        this.driver=driver;
+
+    public String getExitPopUp(){
+        return exitPopUp;
     }
 
-    private WebElement exitPopUp = driver.findElement(By.cssSelector("button[class='_2AkmmA _29YdH8']"));
+   public String getInputTextField(){
+        return inputTextField;
+   }
 
-    @FindBy(how= How.CSS, using="button[class='_2AkmmA _29YdH8']") private WebElement exitLoginPopUp;
-    @FindBy(how=How.CSS, using="input[type='text']") private WebElement inputTextField;
-    @FindBy(how=How.CSS, using="button[type='submit']") private WebElement searchButton;
+    public String getSearchButton(){
+        return searchButton;
+    }
 
 
 //hellotesttest
     public WebElement getExitPopUp(){
         return exitPopUp;
+  
+    public String getDesiredResult(){
+        return desiredResult;
     }
 
-    public WebElement getInputTextField(){
-        return inputTextField;
+    public String getResults(){
+        return results;
+
     }
 
-    public WebElement getSearchButton(){
-        return searchButton;
+    public String getAddToCartButton(){
+        return addToCartButton;
+    }
+
+    public String getPlacerOrderButton(){
+        return placerOrderButton;
     }
 }
