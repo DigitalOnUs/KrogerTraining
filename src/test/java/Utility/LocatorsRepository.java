@@ -30,12 +30,18 @@ public class LocatorsRepository {
         return searchButton;
     }
 
+
+//hellotesttest
+    public WebElement getExitPopUp(){
+        return exitPopUp;
+  
     public String getDesiredResult(){
         return desiredResult;
     }
 
     public String getResults(){
         return results;
+
     }
 
     public String getAddToCartButton(){
