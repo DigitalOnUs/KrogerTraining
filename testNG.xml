@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true"
-          name="/Users/victorcarrillo/Victor-Automation/comkrogertrainingtest/src/test/java/Tests/FirstTest.java">
+          name="/Users/victorcarrillo/Victor-Automation/comkrogertrainingtest/src/test/java/Tests/FirstTest2.java">
         <classes>
             <class name="Tests.FirstTest">
                 <methods>

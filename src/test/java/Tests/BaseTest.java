@@ -6,10 +6,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -23,14 +21,14 @@ public class BaseTest {
     public ExtentReports report;
     public ExtentTest logger;
 
-    @BeforeSuite
+    //@BeforeSuite
     public void setUpSuite(){
         ExtentHtmlReporter extent = new ExtentHtmlReporter(new File(System.getProperty("user.dir")+"/Reports/FirstTest.html"));
         report = new ExtentReports();
         report.attachReporter(extent);
     }
 
-    @BeforeClass
+    @BeforeTest
     public void setup() throws IOException {
 
         CSVReader reader = new CSVReader(new FileReader(CSV_file));
@@ -50,13 +48,13 @@ public class BaseTest {
 
     }
 
-    @AfterClass
+    @AfterTest
     public void tearDown(){
         driver.close();
         driver.quit();
     }
 
-    @AfterMethod
+    //@AfterMethod
     public void tearDownMethod(){
 
         report.flush();
